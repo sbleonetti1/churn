@@ -10,7 +10,7 @@ st.set_page_config(page_title="Customer Churn Dashboard", layout="wide")
 # Title
 st.title("📉 Telco Customer Churn Dashboard")
 
-st.markdown("""Data analysis of Telecom customer churn rate. Provides insight into which factors are most correlated
+st.markdown("""Data analysis of Telecom customer churn rate from a fictional telecom company. Showcases insights into which factors are most correlated
 with whether a customer will cease use of services.""") 
 
 # Upload CSV or use default
