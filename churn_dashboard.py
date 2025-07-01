@@ -20,6 +20,8 @@ df['TotalCharges'] = pd.to_numeric(df['TotalCharges'], errors='coerce')
 # Fill missing values
 df['TotalCharges'].fillna(df['TotalCharges'].median(), inplace=True)
 
+df['Churn'] = df['Churn'].map({'Yes': 1, 'No': 0})
+
 # Sidebar filters
 st.sidebar.header("📊 Filters")
 contract_filter = st.sidebar.multiselect(
