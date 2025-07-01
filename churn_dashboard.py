@@ -11,11 +11,7 @@ st.set_page_config(page_title="Customer Churn Dashboard", layout="wide")
 st.title("📉 Telco Customer Churn Dashboard")
 
 # Upload CSV or use default
-uploaded_file = st.file_uploader("Upload your churn CSV", type=["csv"])
-if uploaded_file is not None:
-    df = pd.read_csv(uploaded_file)
-else:
-    df = pd.read_csv("Telco-Customer-Churn.csv")  # Replace with your local path
+df = pd.read_csv("Telco-Customer-Churn.csv")  # Replace with your local path
 
 # Basic cleaning
 # Convert 'TotalCharges' to numeric (some are missing or blank)
